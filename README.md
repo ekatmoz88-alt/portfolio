@@ -1,21 +1,42 @@
-# Проект: Система учета и администрирования (Абстрактный кейс)
+# Accounting & Administration System — Portfolio Case
 
-**Роль:** Архитектор данных / Аналитик (консалтинг, поддержка, эволюция системы)
+[🇷🇺 Русская версия](#ru) | [🇬🇧 English version](#en)
 
-## О проекте
-Реализована техподдержка и развитие высоконагруженной системы гос. уровня. 
-- Управление жизненным циклом дел (состояния, операции, отмены).
-- Проектирование абстрактной модели данных (временная модель, 25+ доменов).
-- Интеграция через шину межведомственного обмена (СМЭВ) и портал госуслуг.
-- Соблюдение 25+ нормативных актов (152-ФЗ, ИБ).
+---
 
-## Технический стек и артефакты
-- **Модель данных:** ~290 таблиц (Sybase PowerDesigner экспорт), ядро Person/Org/Document, FLC.
-- **Документация:** ТЗ, ЛУ (логическая/физическая модели), регламенты SLA.
-- **Стек:** SQL, EDS, межведомственный обмен.
+## <a id="ru"></a>🇷🇺 Описание (RU)
+**Роль:** Архитектор данных / Аналитик  
+**Суть:** Высоконагруженная система учёта (гос. уровень). Модель данных: 25+ доменов, ~290 таблиц (Sybase PowerDesigner). Интеграции: СМЭВ, портал Госуслуг. Соответствие: 152-ФЗ, ИБ.  
+**Артефакты:** ТЗ, ЛУ (логическая/физическая модель), регламенты SLA.  
+**Структура:** папка `docs/technical/`
 
-## Документы (Анонимизированный шелл)
-- [Абстрактная модель данных и структура БД](docs/technical/anon-data-model-arn.md)
-- [Архитектура и интеграции](docs/technical/anon-askan.md)
+## <a id="en"></a>🇬🇧 Description (EN)
+**Role:** Data Architect / Business Analyst  
+**Summary:** High-load government accounting system. Abstract data model: 25+ domains, ~290 tables (Sybase PowerDesigner). Integrations: SMEV inter-agency bus, Gov services portal. Compliance: Federal Law 152-FZ, InfoSec.  
+**Artifacts:** Technical Specs (TZ), Logical/Physical Models (LU), SLA regulations.  
+**Structure:** `docs/technical/`
 
-*Примечание: Все реальные названия ведомств, шифры, ФИО и исходники скрыты в соответствии с NDA. Представлена чистая архитектурная/аналитическая ценность.*
+---
+📎 Repo: https://github.com/ekatmoz88-alt/portfolio
+---
+## Project: Accounting and Administration System (Abstract Case)
+**Role:** Data Architect / Analyst (consulting, support, system evolution)
+
+### About the project
+Technical support and development of a high-load state-level system.
+- Business lifecycle management (states, operations, cancellations).
+- Abstract data model design (temporal model, 25+ domains).
+- Integration via interagency exchange bus (SMEV) and state portal.
+- Compliance with 25+ regulatory acts (152-FZ, IB).
+
+### Tech Stack & Artifacts
+- Data Model: ~290 tables (Sybase PowerDesigner export), Person/Org/Document core.
+- Docs: TZ, LU (logical/physical models), SLA regulations.
+- Stack: SQL, EDS, interagency exchange.
+
+### Documents (Anonymized shell)
+- [Abstract Data Model & DB Structure](docs/...)
+- [Architecture & Integrations](docs/...)
+
+
+
