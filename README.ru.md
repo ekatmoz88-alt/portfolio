@@ -15,34 +15,30 @@
 - **Git / Markdown** и **versioning** — версионирование документации и changelog;
 - **структуру документации для разработчиков** — как артефакты связаны между собой.
 
----
-
-🇷🇺 [Русская версия](README.ru.md) · 🇬🇧 English version (this file is bilingual, RU below)
-
----
-
-## Role
-
-Technical Writer / Documentation Designer
-
-## Project type
-
-API Documentation Portfolio Project
-
-## Scope
-
-REST API · OpenAPI 3.x · Developer Documentation
-
-## Focus
-
-OpenAPI 3.x, endpoint reference, request/response schemas, error handling, API examples, Postman and Docs-as-Code workflow.
-
-> **Portfolio disclaimer.** The API documented here is a sample service created for demonstration.
-> The subject of the portfolio is the documentation workflow, structure and artifacts — not a live product.
+> **Дисклеймер портфолио.** API, описанный здесь — демонстрационный сервис.
+> Предмет портфолио — процесс документирования, структура и артефакты, а не реальный продукт.
 
 ---
 
-## Repository structure
+## Роль
+
+Технический писатель / документационный дизайнер
+
+## Тип проекта
+
+Портфолио-проект по документации API
+
+## Область
+
+REST API · OpenAPI 3.x · документация для разработчиков
+
+## Специализация
+
+OpenAPI 3.x, справочник эндпоинтов, схемы запросов и ответов, обработка ошибок, примеры запросов, Postman и Docs-as-Code workflow.
+
+---
+
+## Структура репозитория
 
 ```
 .
@@ -61,15 +57,15 @@ OpenAPI 3.x, endpoint reference, request/response schemas, error handling, API e
         └── validate-openapi.yml  ← Docs-as-Code: валидация спеки в CI
 ```
 
-## Deliverables
+## Артефакты
 
 | Артефакт | Файл | Что демонстрирует |
 |---|---|---|
-| OpenAPI 3.1 specification | [`openapi/openapi.yaml`](openapi/openapi.yaml) | Валидный исходник: paths, webhooks, переиспользуемые `components` |
-| API Reference | [`docs/api-reference.md`](docs/api-reference.md) | Повторяемая структура эндпоинта, таблицы параметров и схем |
-| Error handling | [`docs/error-handling.md`](docs/error-handling.md) | Единый формат ошибки, таблица статусов и кодов |
-| Webhooks | [`docs/webhooks.md`](docs/webhooks.md) | События, HMAC-подпись, политика повторов |
-| Developer guide | [`docs/developer-guide.md`](docs/developer-guide.md) | Путь от получения токена до первого вебхука |
+| Спецификация OpenAPI 3.1 | [`openapi/openapi.yaml`](openapi/openapi.yaml) | Валидный исходник: paths, webhooks, переиспользуемые `components` |
+| Справочник эндпоинтов | [`docs/api-reference.md`](docs/api-reference.md) | Повторяемая структура эндпоинта, таблицы параметров и схем |
+| Обработка ошибок | [`docs/error-handling.md`](docs/error-handling.md) | Единый формат ошибки, таблица статусов и кодов |
+| Вебхуки | [`docs/webhooks.md`](docs/webhooks.md) | События, HMAC-подпись, политика повторов |
+| Гайд для разработчика | [`docs/developer-guide.md`](docs/developer-guide.md) | Путь от получения токена до первого вебхука |
 | Changelog | [`docs/changelog.md`](docs/changelog.md) | Версионирование: что изменилось и что сломалось |
 
 ## Docs-as-Code workflow
@@ -79,11 +75,11 @@ OpenAPI 3.x, endpoint reference, request/response schemas, error handling, API e
 3. На каждый PR запускается `.github/workflows/validate-openapi.yml` — валидация спецификации. Спека, которая не проходит линтер, не мержится.
 4. Версия документации фиксируется в `changelog.md` синхронно с версией API.
 
-## Verification
+## Проверка
 
 Каждый задокументированный эндпоинт проверяется в Postman до публикации: имена параметров, поля ответов и коды статусов сверяются с тем, что API возвращает фактически. Спецификация проходит валидацию в CI.
 
-## Tools
+## Инструменты
 
 OpenAPI 3.x · Swagger UI · Postman · Git · Markdown · GitHub Actions
 
@@ -92,18 +88,6 @@ OpenAPI 3.x · Swagger UI · Postman · Git · Markdown · GitHub Actions
 Документация ведётся на двух языках. Терминология фиксируется в глоссарии, поэтому одно понятие сохраняет один термин в обоих языках — RU и EN версии ревьюятся вместе, а не переводятся независимо.
 
 ---
-
-# Русская версия
-
-**Роль:** технический писатель / документационный дизайнер
-**Тип проекта:** портфолио-проект по документации API
-**Область:** REST API · OpenAPI 3.x · документация для разработчиков
-
-## О проекте
-
-Сквозной процесс документирования REST API: контракты эндпоинтов, схемы запросов и ответов, единая модель ошибок, спецификация OpenAPI 3.1, документация вебхуков и гайд для разработчика. Всё ведётся как Docs-as-Code в Git.
-
-Цель — показать, как создаётся каждый артефакт и как он удерживается в синхронном состоянии с API, а не задокументировать существующий продукт.
 
 ## Задачи
 
